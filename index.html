@@ -4,67 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Italo</title>
 </head>
 <body>
+    <h1 class="text-center titoli">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     <div class="container box">
         <!--Input Nome e Cognome-->
-        <label for="nome">Nome Cognome</label>
-        <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
-        <!-- / Input Nome e Cognome-->
+        <div class="info">
+            <label for="nome">Nome Cognome</label>
+            <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
+            <!-- / Input Nome e Cognome-->
 
-        <!--Input numero km-->
-        <label for="km">Km da percorrere</label>
-        <input id="km" type="number" name="km" placeholder="Inserisci i km">
-        <!-- / Input numero km-->
+            <!--Input numero km-->
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" name="km" placeholder="Inserisci i km">
+            <!-- / Input numero km-->
 
-        <!--Selezione età-->
-        <label for="eta">Fascia d'et&agrave;</label>
-        <select name="eta" id="eta">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over65">Over65</option>
-        </select>
-        <!-- / Selezione età-->
-        
+            <!--Selezione età-->
+            <label for="eta">Fascia d'et&agrave;</label>
+            <select name="eta" id="eta">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over65</option>
+            </select>
+            <!-- / Selezione età-->
+            <div class="container btn">
+                <button id="calcolaPrezzo" name="calcolaPrezzo">Genera</button>
+                <button id="annulla" name="annulla">Annulla</button>
+            </div>
+        </div>
     </div>
-    <div class="container btn">
-        <button id="calcolaPrezzo" name="calcolaPrezzo">Genera</button>
-        <button id="annulla" name="annulla">Annulla</button>
-    </div>
-
+    
+    <h1 class="text-center titoli">IL TUO BIGLIETTO</h1>
     <div class="container">
         <div id="biglietto" class="box2">
             <h1>DETTAGLIO PASSEGGERI</h1>
 
             <div class="dettagli">
-                <div class="passeggero">
-                    <h3>NOME PASSEGGERO</h3>
-                    <h2 id="nome-utente"></h2>
-                </div>
-                <div class="offerta">
-                    <h3>OFFERTA</h3>
-                    <h2 id="offerta-utente"></h2>
-                </div>
-                <div class="carrozza">
-                    <h3>CARROZZA</h3>
-                    <h2 id="num-carrozza"></h2>
-                </div>
-                <div class="cod-cp">
-                    <h3>CODICE-CP</h3>
-                    <h2 id="cod-cp"></h2>
-                </div>
-                <div class="costo-biglietto">
-                    <h3>COSTO BIGLIETTO</h3>
-                    <h2 id="prezzo-biglietto">
-                        
-                    </h2>
+                <div class="box3">
+                    <div class="passeggero">
+                        <h3>NOME PASSEGGERO</h3>
+                        <h2 id="nome-utente"></h2>
+                    </div>
+                    <div class="offerta">
+                        <h3>OFFERTA</h3>
+                        <h2 id="offerta-utente"></h2>
+                    </div>
+                    <div class="carrozza">
+                        <h3>CARROZZA</h3>
+                        <h2 id="num-carrozza"></h2>
+                    </div>
+                    <div class="cod-cp">
+                        <h3>CODICE-CP</h3>
+                        <h2 id="cod-cp"></h2>
+                    </div>
+                    <div class="costo-biglietto">
+                        <h3>COSTO BIGLIETTO</h3>
+                        <h2 id="prezzo-biglietto"></h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
