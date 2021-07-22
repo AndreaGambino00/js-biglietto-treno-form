@@ -8,7 +8,7 @@
     <title>Italo</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container box">
         <!--Input Nome e Cognome-->
         <label for="nome">Nome Cognome</label>
         <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
@@ -20,22 +20,48 @@
         <!-- / Input numero km-->
 
         <!--Selezione età-->
-        <label for="fascia-eta">Fascia d'et&agrave;</label>
-        <select name="fascia-eta" id="fascia-eta">
+        <label for="eta">Fascia d'et&agrave;</label>
+        <select name="eta" id="eta">
             <option value="minorenne">Minorenne</option>
             <option value="maggiorenne">Maggiorenne</option>
             <option value="over65">Over65</option>
         </select>
         <!-- / Selezione età-->
+        
     </div>
-    <div class="container">
+    <div class="container btn">
         <button id="calcolaPrezzo" name="calcolaPrezzo">Genera</button>
         <button id="annulla" name="annulla">Annulla</button>
     </div>
 
     <div class="container">
-        <div id="biglietto" class="box">
-            
+        <div id="biglietto" class="box2">
+            <h1>DETTAGLIO PASSEGGERI</h1>
+
+            <div class="dettagli">
+                <div class="passeggero">
+                    <h3>NOME PASSEGGERO</h3>
+                    <h2 id="nome-utente"></h2>
+                </div>
+                <div class="offerta">
+                    <h3>OFFERTA</h3>
+                    <h2 id="offerta-utente"></h2>
+                </div>
+                <div class="carrozza">
+                    <h3>CARROZZA</h3>
+                    <h2 id="num-carrozza"></h2>
+                </div>
+                <div class="cod-cp">
+                    <h3>CODICE-CP</h3>
+                    <h2 id="cod-cp"></h2>
+                </div>
+                <div class="costo-biglietto">
+                    <h3>COSTO BIGLIETTO</h3>
+                    <h2 id="prezzo-biglietto">
+                        
+                    </h2>
+                </div>
+            </div>
         </div>
     </div>
 
