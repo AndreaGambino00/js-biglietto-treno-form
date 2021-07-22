@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Italo</title>
+</head>
+<body>
+    <div class="container">
+        <!--Input Nome e Cognome-->
+        <label for="nome">Nome Cognome</label>
+        <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
+        <!-- / Input Nome e Cognome-->
+
+        <!--Input numero km-->
+        <label for="km">Km da percorrere</label>
+        <input id="km" type="number" name="km" placeholder="Inserisci i km">
+        <!-- / Input numero km-->
+
+        <!--Selezione età-->
+        <label for="fascia-eta">Fascia d'et&agrave;</label>
+        <select name="fascia-eta" id="fascia-eta">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over65</option>
+        </select>
+        <!-- / Selezione età-->
+    </div>
+    <div class="container">
+        <button id="calcolaPrezzo" name="calcolaPrezzo">Genera</button>
+        <button id="annulla" name="annulla">Annulla</button>
+    </div>
+
+    <div class="container">
+        <div id="biglietto" class="box">
+            
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
